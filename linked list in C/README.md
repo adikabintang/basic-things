@@ -1,6 +1,0 @@
-## Linked list example
-
-This is the example of how to implement linked list. This is not complete, it only includes pushing a node to a list, deleting nodes, and printing all the nodes. This example is inspired by the linked list tutorial from Stanford [1]. I recommend you read that tutorial, it's very nice.
-
-[1] http://cslibrary.stanford.edu/103/
-
