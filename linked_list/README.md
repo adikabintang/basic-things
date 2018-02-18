@@ -1,2 +1,5 @@
 ## How to compile
-$ gcc -o main.out main.c -g
+```$ gcc main.c -g -o main.out```
+
+## How to run
+```$ ./main.out```
