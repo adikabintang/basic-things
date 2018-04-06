@@ -1,0 +1,3 @@
+[submodule "test-proj-submodules/third_party/cpp-httplib"]
+	path = test-proj-submodules/third_party/cpp-httplib
+	url = https://github.com/adikabintang/cpp-httplib.git
