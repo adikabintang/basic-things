@@ -11,6 +11,7 @@ int interpolation_search(int *array, int searched_data, unsigned int array_size)
     while (high >= low) {
         probbed_position = low + ( (searched_data - array[low]) * (high - low)
             / (array[high] - array[low]) );
+            
         if (array[probbed_position] == searched_data) {
             return probbed_position;
         }
