@@ -6,9 +6,11 @@
 int interpolation_search(int *array, int searched_data, unsigned int array_size) {
     unsigned int low = 0;
     unsigned int high = ARRAY_SIZE - 1;
-    unsigned int probbed_position = (unsigned int) ARRAY_SIZE / 2;
+    unsigned int probbed_position;
 
     while (high >= low) {
+        probbed_position = low + ( (searched_data - array[low]) * (high - low)
+            / (array[high] - array[low]) );
         if (array[probbed_position] == searched_data) {
             return probbed_position;
         }
@@ -19,8 +21,7 @@ int interpolation_search(int *array, int searched_data, unsigned int array_size)
             low = probbed_position + 1;
         }
 
-        probbed_position = low + ( (searched_data - array[low]) * (high - low)
-            / (array[high] - array[low]) );
+        
     }
 
     return INTERPOLATION_SEARCH_NOT_FOUND;
@@ -37,5 +38,6 @@ int main()
     else {
         printf("found at %d\n", index_search);
     }
+    
     return 0;
 }
